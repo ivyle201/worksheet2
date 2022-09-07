@@ -1,6 +1,5 @@
- 229346 line counts for verified Y
-44402864 word counts for verified Y
+229346 This is verified line counts (Y)
+44402864 This is verified word counts (Y)
 
-
-2876174 line counts for non-verified N 
-505766888 word counts for non-verified N
+2876174 This is non-verified line counts (N)
+505766888 This is non-verified word counts (N)

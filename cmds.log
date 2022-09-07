@@ -315,17 +315,138 @@
   315  grep -P '\t?\tN' amazon_reviews_us_Books_v1_02.tsv | wc -l
   316  grep -P '\t?\tY' amazon_reviews_us_Books_v1_02.tsv | wc -l
   317  ls -ltr
-  318  vi counts.txt
-  319  cat counts.txt
-  320  vi counts.txt
-  321  cat counts
-  322  cat counts.txt
-  323  mv counts.txt tmp
+  318  egrep "\tY|N\tY\t" amazon_reivews_us_Books_v1_02.tsv | wc -l
+  319  egrep "\t0|1\tY" amazon_reviews_us_Books_v1_02.tsv
+  320  ls -ltr
+  321  head -n 2 amazon_reviews_us_Books_v1_02.tsv 
+  322  ls -ltrh
+  323  ls -t
   324  ls
-  325  cd temp
-  326  cd tmp
-  327  ls
-  328  cd .
-  329  cd ..
-  330  ls -ltr
-  331  history > cmds.log
+  325  awk '{if ($12 == "Y") n++} END {print n}' amazon_reviews_us_Books_v1_02.tsv 
+  326  awk '{if ($12 == "") n++} END {print n}' amazon_reviews_us_Books_v1_02.tsv 
+  327  wc amazon_reviews_us_Books_v1_02.tsv 
+  328  wc -l amazon_reviews_us_Books_v1_02.tsv 
+  329  grep -P '\tY|N\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  330  grep -P '\tY|N\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  331  grep -P '\tY|N\tN' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  332  grep -P '\t?\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  333  grep -P '\t?\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  334  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  335  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  336  grep -P '\tY\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  337  grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  338  head -n 1 amazon_reviews_us_Books_v1_02.tsv 
+  339  grep -P '\tN|Y\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  340  grep -P '\tN|Y\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  341  grep -P '\t[YN]{1}\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  342  grep -P '\t[YN]{1}\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  343  grep -P '\t[YN]{1}\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw
+  344  grep -P '\t[YN]{1}\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw
+  345  44402864 + 505766888
+  346  echo 44402864 + 505766888
+  347  echo `44402864 + 505766888`
+  348  expr 44402864 + 505766888
+  349  head -n 1 amazon_reviews_us_Books_v1_02.tsv | wc -w
+  350  expr 550169752 + 15
+  351  grep -P '\t[YN]{1}\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw > counts.txt
+  352  ls -ltr
+  353  echo "\n"
+  354  echo \n
+  355  echo '\n'
+  356  echo $'\n'
+  357  echo $'\n' >> counts.txt
+  358  grep -P '\t[YN]{1}\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw >> counts.txt
+  359  cat counts.txt
+  360  vi counts.txt
+  361  ls -ltr
+  362  vi counts.txt
+  363  cat counts.txt
+  364  vi counts.txt
+  365  cat counts
+  366  cat counts.txt
+  367  mv counts.txt tmp
+  368  ls
+  369  cd temp
+  370  cd tmp
+  371  ls
+  372  cd .
+  373  cd ..
+  374  ls -ltr
+  375  history > cmds.log
+  376  cat cmds.log
+  377  mkdir worksheet2
+  378  cd worksheet2
+  379  echo "# worksheet2" >> README.md
+  380  ls
+  381  cat README.md
+  382  get init
+  383  git init
+  384  ls -a
+  385  git add README.md
+  386  git commit -m "Worksheet2 assignment"
+  387  ls
+  388  ls -ltr
+  389  get status
+  390  git status
+  391  git log
+  392  git branch -M main
+  393  git remote add origin https://github.com/ivyle201/worksheet2.git
+  394  git push -u origin main
+  395  git push -u origin main https://github.com/ivyle201/worksheet2.git
+  396  git push -u origin main
+  397  git log
+  398  git status
+  399  ls -ltr
+  400  cd ..
+  401  ls -ltr
+  402  cd worksheets
+  403  cd worksheet2
+  404  cd ..
+  405  cd tmp
+  406  mv ../counts.txt
+  407  mv count.txt/..
+  408  mv counts.txt ../
+  409  ls -ltr
+  410  cd ..
+  411  ls -ltr
+  412  cd worksheet2
+  413  mv ../counts.txt .
+  414  mv ../cmds.log .
+  415  ls
+  416  git status 
+  417  git add counts.txt
+  418  git add cmds.log
+  419  git status
+  420  git commit -m "commit worksheet2 assignment"
+  421  git log
+  422  git --help
+  423  git help push
+  424  git push
+  425  cd ..
+  426  ls -ltr
+  427  grep -m 5 -P '\t[NY]{1}\tY\t' amazon_reviews_us_Books_v1_02.tsv 
+  428  grep -m 15 -P '\t[NY]{1}\tY\t' amazon_reviews_us_Books_v1_02.tsv 
+  429  grep -m 15 -P '\t[NY]{1}\tN\t' amazon_reviews_us_Books_v1_02.tsv 
+  430  grep -m 15 -P '\t[YN]{1}\tN\t' amazon_reviews_us_Books_v1_02.tsv 
+  431  grep -P '\t[YN]{1}\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw
+  432  grep -P '\t[YN]{1}\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw
+  433  wc amazon_reviews_us_Books_v1_02.tsv 
+  434  expres 2876174 +    3105521
+  435  expr 2876174 +  3105521
+  436  expr 2876174 + 229346
+  437  expr 505766888 + 44402864 + 15
+  438  ls -altr
+  439  cat ../tpm
+  440  cat ../tmp
+  441  cat tmp
+  442  ls -ltr
+  443  cat counts.txt
+  444  cat counts.txt.swp
+  445  grep -P '\t[YN]{1}\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw > counts.txt
+  446  cat counts.txt
+  447  grep -P '\t[YN]{1}\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -lw >> counts.txt
+  448  cat counts.txt
+  449  vi counts.txt
+  450  cat counts
+  451  cat counts.txt
+  452  history > cmds.log
