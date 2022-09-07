@@ -1,0 +1,331 @@
+    1  passwd 
+    2  passwd
+    3  $ wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    4  wget
+    5  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    6  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+    7  sudo dnf install git-all
+    8  git
+    9  version
+   10  sudo status
+   11  git status
+   12  get --version
+   13  git --version
+   14  ls
+   15  pwd
+   16  mkdir myproject
+   17  cd myproject
+   18  git init
+   19  touch newfile.txt
+   20  ls
+   21  git status
+   22  git add newfile.txt
+   23  git status
+   24  git commit -m "My first commit"
+   25  git config --global user.email "vy.l.le@sjsu.edu"
+   26  git config --global user.name "Vivian Le"
+   27  git commit -m "My first commit"
+   28  git status
+   29  git log
+   30  git log --decorate
+   31  git log --oneline --decorate
+   32  git branch testing
+   33  git checkout testing
+   34  git status
+   35  git log
+   36  git status
+   37  git checkout master
+   38  git log
+   39  git status
+   40  vim myfile2.txt
+   41  git log
+   42  git status
+   43  git add myfile2.txt
+   44  git status
+   45  git commit -m "My second commit"
+   46  git log
+   47  git checkout testing
+   48  git log
+   49  git status
+   50  git checkout master
+   51  ls
+   52  git branch testing2
+   53  git status
+   54  git checkout testing2
+   55  ls
+   56  vim myfile2.txt
+   57  git status
+   58  git -a -m "this is my modify commit"
+   59  git commit -a -m "This is my mofify commit"
+   60  git status
+   61  git log
+   62  git checkout master
+   63  git log
+   64  git status
+   65  ls
+   66  vim myfile2.txt
+   67  git commit -a -m "make other changes"
+   68  git status
+   69  git log
+   70  git log --oneline --decorate --graph --all
+   71  git status
+   72  cat testfile2.txt
+   73  ls
+   74  cat myfile2.txt
+   75  git checkout testing2
+   76  cat myfile2.txt
+   77  git checkout master
+   78  git merge testing2
+   79  git reset --hard
+   80  git status
+   81  vim myfile2.txt
+   82  cat myfile2.txt
+   83  git merge testing2
+   84  git commit -a -m "revised the change"
+   85  git status
+   86  git merge testing2
+   87  git merge testing
+   88  git reset --hard
+   89  git status
+   90  ls
+   91  git log --oneline --decorate --graph --all
+   92  git checkout testing
+   93  git status
+   94  git log
+   95  git merge testing2
+   96  git log --oneline --decorate --graph --all
+   97  git status
+   98  git checkout master
+   99  git status
+  100  git merge testing1
+  101  git branch -d testing
+  102  git status
+  103  git brand -d testing
+  104  git branch -d testing
+  105  git status
+  106  git merge testing
+  107  vim myfile2.txt
+  108  git status
+  109  git add myfile2.txt
+  110  git status
+  111  git commit
+  112  git log --oneline --decorate --graph --all
+  113  git branch -d testing, testing2
+  114  git branch -d testing testing2
+  115  git log
+  116  git status
+  117  git log --oneline --decorate --graph --all
+  118  git branch
+  119  git branch -v
+  120  git branch --merged
+  121  git branch --no-merged
+  122  git remote add origin https://github.com/ivyle201/newrepo.git
+  123  git branch -M main
+  124  git push -u origin main
+  125  git pull origin main
+  126  git log
+  127  cd ..
+  128  mkdir worksheet1
+  129  cd
+  130  cd ..
+  131  cd worksheet1
+  132  ls
+  133  cd vivian
+  134  cd worksheet1
+  135  echo "# worksheet1" >> README.md
+  136  git init
+  137  git add README.md
+  138  git commit -m "first commit"
+  139  git status
+  140  git branch -M main
+  141  git --help
+  142  git ??
+  143  git remote add origin https://github.com/ivyle201/worksheet1.git
+  144  git push -u origin main
+  145  history > cmds.log
+  146  cat cmds.log
+  147  git status
+  148  git commit -a -m "Adding log of commands for Assignment #1"
+  149  git add cmds.log
+  150  git status
+  151  git commit -m "Adding log of commands for Assigment #1"
+  152  git status
+  153  git push origin main
+  154  git status
+  155  ls --help
+  156  man ls
+  157  for i in {1..1000}; do touch i.txt; done
+  158  ls -lat
+  159  ls latr
+  160  ls -latr
+  161  for i in {1..1000}; do touch $i.txt; done
+  162  ls
+  163  ls -latr
+  164  ls ?.txt
+  165  ls ??.txt
+  166  ls -latr ?.txt
+  167  ls -latr *
+  168  ls -latr 10*
+  169  find ./ -type f -name "*.txt"
+  170  find ./ -type f -name "?.txt"
+  171  tar xvf tarrred.tar *
+  172  tar cvf tarred.tar
+  173  tar cvf tarred.tar *
+  174  ls -latr
+  175  tar tvf tarred.tar
+  176  tar tvf tarred.tar | grep f
+  177  tar cvf tarred.tar --exclude "???.txt" *
+  178  tar cvf tarred.tar --exclude "???.tar" *
+  179  tar cvf tarred2.txt --exclude *tmp???.txt" tmp
+  180  tmp/
+  181  :q
+  182  exit
+  183  :q
+  184  j;;
+  185  tar cvf tarred2.tar --exclude "*tmp/???.txt*" tmp
+  186  tar cvf tarred.tar --exclude "*tmp/???.txt" tmp
+  187  ls
+  188  ls latr
+  189  ls -latr
+  190  rm tarred2.tar
+  191  ls
+  192  ls -latr
+  193  tar cvf tarred2.tar --exclude "*tmp/???.txt*" tmp
+  194  ls -latr
+  195  rm tarred2.tar
+  196  tar tarred2.tar --exclude "*tmp/???.txt" tmp
+  197  tar cvf tarred3.tar --exclude "*tmp/???.txt" tmp
+  198  rm tar*
+  199  ls -latr
+  200  tar cvf tarred.tar 
+  201  tar cvf tarred.tar *
+  202  ls -latr
+  203  tar cvf tarred2.tar --exclude "*tmp/???.txt" tmp
+  204  mkdir tmp
+  205  cd tmp
+  206  ls -latr
+  207  mv tarred.tar
+  208  ls -lat
+  209  ls -latr
+  210  cd..
+  211  cd ..
+  212  ls -latr
+  213  ls -lat
+  214  pwd
+  215  mv *.txt tmp
+  216  ls -latr
+  217  rm tmp
+  218  ls -ltr
+  219  touch .test
+  220  ls ltr
+  221  ls -ltr
+  222  ls -latr
+  223  rm .test
+  224  ls -ltr
+  225  tar
+  226  tar --help
+  227  ls -latr
+  228  ls -ltr
+  229  mkdir newtar
+  230  ls -ltr
+  231  man tar
+  232  gzip tarred2.tar
+  233  ls -ltr
+  234  cd newtar/
+  235  tar zxvf tarred2.tar gz
+  236  ls -ltr
+  237  cd tmp
+  238  ls
+  239  cd ..
+  240  ls -ltr
+  241  cd newtar
+  242  ls
+  243  mv tarred2.tar.gz newtar/
+  244  mv tarred.tar.gz newtar
+  245  cd ..
+  246  mv tarred.tar.gz newtar/
+  247  mv tarred2.tar.gz newtar
+  248  ls
+  249  ls -ltr
+  250  cd newtar
+  251  ls -ltr
+  252  ls
+  253  tar zxvf tarred2.tar gz
+  254  tar zxvf tarred2.tar.gz
+  255  ls -ltr
+  256  ls
+  257  tar xvf tarred2.tar
+  258  tar xvf tarred2.tar.gz
+  259  ls
+  260  ls -ltr
+  261  tar -xf tarred2.tar.gz
+  262  ls
+  263  ls -latr
+  264  cat tarred2.tar.gz
+  265  ls
+  266  tar tvf tarred2.tar.gz
+  267  ls
+  268  ls -ltr
+  269  cd ..
+  270  ls
+  271  tar tvf tarred.tar
+  272  mv *.txt tpm
+  273  mv *.txt tmp
+  274  ls -ltr
+  275  tar tvf tarred.tar
+  276   wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  277  ls
+  278  ls -ltr
+  279  tar zxvf amazon_reviews_us_books_v1_02.tsv.gz
+  280  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  281  tar tvf  amazon_reviews_us_Books_v1_02.tsv.gz
+  282  rm amazon_reviews_us_Books_v1_02.tsv.gz
+  283  rm amazon_reviews_us_Books_v1_02.tsv
+  284  ls -ltr
+  285  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  286  ls -ltr
+  287  tar zxvf amazon_reviews_us_Books_v1_02.tsv.gz
+  288  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  289  cat amazon_reviews_us_Books_v1_02.tsv.gz
+  290  cat amazon_reviews_us_Books_v1_02.tsv
+  291   amazon_reviews_us_Books_v1_02.tsv
+  292  head  amazon_reviews_us_Books_v1_02.tsv
+  293  tail  amazon_reviews_us_Books_v1_02.tsv
+  294  grep --help
+  295  egrep verified amazon_reviews_us_Books_v1_02.tsv
+  296  ls -ltr
+  297  head -n 2 amazon_reviews_us_Books_v1_02.tsv
+  298  grep --help
+  299  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv
+  300  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  301  head -n 2 amazon_reviews_us_Books_v1.02.tsv
+  302  ls -ltr
+  303  head -n 2 amazon_reviews_us_Books_v1_02.tsv
+  304  ls -ltr
+  305  head -n 2 amazon_reviews_us_Books_v1_02.tsv
+  306  ls -ltr
+  307  grep -P '\tY|N\tY' amazon_reviews_us_Books_v1_02.tsv
+  308  grep -P '\tY|N\tY' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  309  grep -P '\tY\tY' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  310  grep -P '\tN\tY' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  311  grep -P '\tY\tN' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  312  grep -P '\tY|N\tY' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  313  grep -P '\tY|N\tN' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  314  grep -P '\tN\tN' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  315  grep -P '\t?\tN' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  316  grep -P '\t?\tY' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  317  ls -ltr
+  318  vi counts.txt
+  319  cat counts.txt
+  320  vi counts.txt
+  321  cat counts
+  322  cat counts.txt
+  323  mv counts.txt tmp
+  324  ls
+  325  cd temp
+  326  cd tmp
+  327  ls
+  328  cd .
+  329  cd ..
+  330  ls -ltr
+  331  history > cmds.log
